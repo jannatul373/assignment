@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
             "Hello World",
             style: TextStyle(
               fontFamily: 'Roboto',
-              fontSize: 50,
-              color: Color.fromARGB(255, 255, 64, 160),
+              fontSize: 70,
+              color: Color.fromARGB(255, 135, 0, 67),
               fontWeight: FontWeight.bold,
             ),
           ),

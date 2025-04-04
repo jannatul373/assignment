@@ -1,6 +1,7 @@
+import 'package:flutter/material.dart';
+import 'package:assignment/screen/login_screen.dart';
 import 'package:assignment/screen/first_screen.dart';
 import 'package:assignment/screen/second_screen.dart';
-import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,10 +14,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Two Screen App',
-      initialRoute: '/',
+      title: 'Multi-Screen App',
+      initialRoute: '/login',
       routes: {
-        '/': (context) => const FirstScreen(),
+        '/login': (context) => const LoginScreen(),
+        '/first': (context) => const FirstScreen(),
         '/second': (context) => const SecondScreen(),
       },
     );

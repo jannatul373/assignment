@@ -26,8 +26,22 @@ class _LoginScreenState extends State<LoginScreen> {
               borderRadius: BorderRadius.circular(20),
               boxShadow: const [
                 BoxShadow(blurRadius: 10, color: Colors.black12),
+                
               ],
+              child: Form(
+              key: _formKey,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Icon(Icons.lock_outline, size: 60, color: Colors.blue),
+                  const SizedBox(height: 20),
+                  const Text(
+                    'Login to Continue',
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                  ),
+                ]
             ),
+              )
           ),
         ),
       ),

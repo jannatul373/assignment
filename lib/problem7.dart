@@ -15,3 +15,28 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+class GridScreen extends StatelessWidget {
+  const GridScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text("Image Grid")),
+      body: Padding(
+        padding: const EdgeInsets.all(12.0),
+        child: GridView.builder(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            crossAxisSpacing: 12,
+            mainAxisSpacing: 12,
+            childAspectRatio: 1,
+          ),
+          itemBuilder: (context, index) {
+            return ClipRRect(borderRadius: BorderRadius.circular(12));
+          },
+        ),
+      ),
+    );
+  }
+}

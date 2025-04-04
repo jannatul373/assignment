@@ -15,7 +15,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Two Screen App',
       initialRoute: '/',
-      routes: {'/': (context) => const FirstScreen()},
+      routes: {
+        '/': (context) => const FirstScreen(),
+        '/second': (context) => const SecondScreen(),
+      },
     );
   }
 }

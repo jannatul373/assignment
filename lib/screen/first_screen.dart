@@ -12,7 +12,7 @@ class FirstScreen extends StatelessWidget {
           onPressed: () {
             Navigator.pushNamed(context, '/second');
           },
-          child: const Text("Go  back"),
+          child: const Text("Go to Second page"),
         ),
       ),
     );

@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
         '/login': (context) => const LoginScreen(),
         '/first': (context) => const FirstScreen(),
         '/second': (context) => const SecondScreen(),
+        '/home': (context) => const HomeScreen(), // Add home screen route
       },
     );
   }
